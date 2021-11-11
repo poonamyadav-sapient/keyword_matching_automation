@@ -73,7 +73,7 @@ class GetMatchingReceipts:
         }
 
         df = pd.DataFrame(receipt_info)
-        df.to_csv(self.banner_key + '_' + keyword, mode='w', index=False)
+        df.to_csv(self.banner_key + '_' + keyword + '.csv', mode='w', index=False)
         print(f"CSV file created for keyword '{keyword}'")
 
     def get_receipts(self, args):
@@ -96,7 +96,7 @@ class GetMatchingReceipts:
         while True:
             for keyword in self.keywords:
                 print(f"Viewing receipts for {keyword}")
-                receipt_url = self.read_csv(self.banner_key + '_' + keyword)
+                receipt_url = self.read_csv(self.banner_key + '_' + keyword + '.csv')
                 while True:
                     for i in range(self.views):
                         j = randint(0,99)
