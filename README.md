@@ -31,5 +31,5 @@ Example:
 
 After the csv files are created, the code will display random receipts on the browser whose count is equal to value provided in `--view={}`
 
-If the receipts viewed are enough press N on the terminal to view random receipts for the next keyword or else press Y.
+If the receipts viewed are enough press N on the terminal to view random receipts for the next keyword or else press Y to view random receipts of the same keyword.
 
