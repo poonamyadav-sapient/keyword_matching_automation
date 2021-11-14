@@ -6,7 +6,7 @@
  
  Create a virtual environment by using command `pipenv shell --python 3.7`.
  
- Run the command `pip install -r requirements.txt` to install all the packages.
+ Run the command `pip install -r requirements.txt` or `pipenv install --ignore-pipfile` to install all the packages.
  
  **Credentials require for accessing snowflake:**
  
