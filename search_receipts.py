@@ -52,7 +52,7 @@ class DisplayReceipts:
                 print(f"Viewing receipts for {keyword}")
                 df = pd.read_csv('Receipt_csv/' + self.banner_key + '_' + keyword + '.csv')
                 receipt_url = df['Receipt_url']
-                self.view_receipts(receipt_url, keyword, self.limit)
+                self.view_receipts(receipt_url, keyword, len(receipt_url))
             print("Receipts of all keywords viewed!")
         else:
             return
