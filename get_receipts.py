@@ -31,7 +31,7 @@ class GetMatchingReceipts:
         elif args.receipt_type.lower() == 'ereceipt':
             SearchEreceipt(args.banner_key, args.keywords, args.views, args.start_date, args.limit)
         else:
-            print('Wrong choice')
+            print('Wrong choice!!!')
 
 
 if __name__ == '__main__':
