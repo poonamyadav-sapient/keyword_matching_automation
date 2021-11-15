@@ -28,8 +28,10 @@ class GetMatchingReceipts:
     def run_args(self, args):
         if args.receipt_type.lower() == 'paper':
             SearchPaperReceipts(args.banner_key, args.keywords, args.views, args.start_date, args.limit)
-        else:
+        elif args.receipt_type.lower() == 'ereceipt':
             SearchEreceipt(args.banner_key, args.keywords, args.views, args.start_date, args.limit)
+        else:
+            print('Wrong choice')
 
 
 if __name__ == '__main__':
